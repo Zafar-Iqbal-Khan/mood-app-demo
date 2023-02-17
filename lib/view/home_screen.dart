@@ -371,20 +371,10 @@ class HomeScreen extends StatelessWidget {
     );
     chartData = ChartData(
       dataRowsColors: const [Colors.green],
-      dataRows: const [
-        [4, 5, 1, 5, 3, 4, 4, 3, 5],
+      dataRows: [
+        _homeController.emoji_point,
       ],
-      xUserLabels: const [
-        '3/22',
-        '6/22',
-        '7/22',
-        '8/22',
-        '9/22',
-        '10/22',
-        "12/22",
-        "13/22",
-        "14/22"
-      ],
+      xUserLabels: _homeController.created_at,
       dataRowsLegends: const [""],
       chartOptions: chartOptions,
     );
